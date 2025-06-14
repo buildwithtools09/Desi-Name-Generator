@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desi Couple Name Generator | Create Stylish Insta & YouTube Names</title>
+    <meta name="description" content="Generate cute, cool and stylish couple names or social usernames instantly. Desi name combiner for Insta, YouTube and more. Free and fast!" />
+    <meta name="keywords" content="Couple Name Generator, Desi Name Combiner, Instagram Name Ideas, Stylish Usernames, YouTube Channel Name Generator India" />
+    <meta property="og:title" content="Desi Couple Name Generator" />
+    <meta property="og:description" content="Make your own fun names with our free Desi Name Generator Tool!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-purple-50 min-h-screen font-[Poppins]">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-purple-600 mb-2">💡 Desi Name Generator</h1>
+            <p class="text-gray-600">Create unique names for couples, Instagram, and YouTube!</p>
+        </header>
+
+        <!-- Tool Tabs -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <div class="flex space-x-4 mb-6">
+                <button class="tab-btn active flex-1 py-2 px-4 rounded-lg bg-purple-600 text-white" data-tab="couple">👫 Couple Names</button>
+                <button class="tab-btn flex-1 py-2 px-4 rounded-lg bg-gray-200" data-tab="instagram">📸 Instagram</button>
+                <button class="tab-btn flex-1 py-2 px-4 rounded-lg bg-gray-200" data-tab="youtube">🎥 YouTube</button>
+            </div>
+
+            <!-- Couple Name Generator -->
+            <div id="couple" class="tab-content active">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" id="name1" placeholder="Enter First Name" class="p-2 border rounded-lg">
+                    <input type="text" id="name2" placeholder="Enter Second Name" class="p-2 border rounded-lg">
+                </div>
+                <button onclick="generateCoupleName()" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition">🔥 Generate Couple Name</button>
+            </div>
+
+            <!-- Instagram Username Generator -->
+            <div id="instagram" class="tab-content hidden">
+                <input type="text" id="instaInput" placeholder="Enter your name/hobby/mood" class="w-full p-2 border rounded-lg mb-4">
+                <select id="instaStyle" class="w-full p-2 border rounded-lg mb-4">
+                    <option value="cute">🥰 Cute Style</option>
+                    <option value="cool">😎 Cool Style</option>
+                    <option value="professional">👔 Professional Style</option>
+                </select>
+                <button onclick="generateInstaName()" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition">🔥 Generate Instagram Username</button>
+            </div>
+
+            <!-- YouTube Channel Name Generator -->
+            <div id="youtube" class="tab-content hidden">
+                <input type="text" id="ytNiche" placeholder="Enter your niche (e.g. Gaming, Cooking)" class="w-full p-2 border rounded-lg mb-4">
+                <select id="ytTone" class="w-full p-2 border rounded-lg mb-4">
+                    <option value="funny">😄 Funny</option>
+                    <option value="cool">😎 Cool</option>
+                    <option value="professional">👔 Professional</option>
+                </select>
+                <button onclick="generateYTName()" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition">🔥 Generate YouTube Name</button>
+            </div>
+        </div>
+
+        <!-- Output Box -->
+        <div id="output" class="bg-white rounded-lg shadow-lg p-6 mb-8 hidden">
+            <h3 class="text-xl font-semibold mb-4">🎉 Your Generated Name:</h3>
+            <div id="generatedName" class="text-2xl text-center text-purple-600 font-bold p-4 bg-purple-50 rounded-lg"></div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="text-center my-8">
+            <!-- Adsterra Banner Ad -->
+            <div style="text-align:center; margin: 20px 0;">
+                <script type='text/javascript' src='//www.adsterra.com/ad/code_here'></script>
+            </div>
+        </div>
+
+        <!-- SEO Content -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">About Our Name Generator</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Looking for the perfect couple name, Insta username or YouTube channel name? Our free Desi Name Generator combines names and ideas in a fun, stylish way. Just enter your name or keywords and get started! Whether you're a couple looking to create a unique combination of your names, an aspiring Instagram influencer seeking a standout username, or a future YouTube star in need of a catchy channel name, we've got you covered.
+                <br><br>
+                Our intelligent name generator uses creative algorithms to produce unique, memorable, and culturally relevant name combinations. For couples, we blend your names seamlessly to create sweet and meaningful combinations. For social media enthusiasts, we add trendy elements like emojis and stylish fonts to help you stand out in the crowded digital space.
+                <br><br>
+                Try our free tool today and discover the perfect name for your needs. Share your generated names with friends and family to get their opinion. Remember, the perfect name is just a click away!
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-purple-600">Contact</a>
+                <a href="#" class="hover:text-purple-600">Privacy Policy</a>
+                <a href="#" class="hover:text-purple-600">Terms</a>
+            </div>
+            <p>© 2024 Desi Name Generator. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
